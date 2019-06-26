@@ -3,6 +3,7 @@ html {box-sizing:border-box;}
 
 body {
     background-color: rgb(91,162,213);
+    max-width: 100%;
 }
 
 label , input , select, textarea {
@@ -59,4 +60,13 @@ label {
 }
 input, textarea {
     text-indent: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    label , input , select, textarea {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
 }
